@@ -1,0 +1,148 @@
+/* Custom variables */
+:root {
+    --wine: #7D1D3F;
+    --gold: #D4AF37;
+    --dark: #1A1A1A;
+    --light: #F5F5F5;
+    --olive: #556B2F;
+}
+
+/* Typography */
+body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Custom colors */
+.bg-wine {
+    background-color: var(--wine);
+}
+
+.text-wine {
+    color: var(--wine);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+/* Navigation */
+#navbar {
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#navbar.scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--gold);
+    color: var(--dark);
+}
+
+/* Menu items */
+.menu-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ddd;
+}
+
+/* Wine icon animation */
+.wine-icon {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.wine-icon:hover {
+    transform: translateY(-5px);
+}
+
+/* Chef image container */
+.chef-image-container {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.chef-image-container:hover {
+    transform: scale(1.05);
+}
+
+.chef-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid var(--wine);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.chef-image-container:hover::after {
+    opacity: 1;
+}
+
+/* Sections fade-in animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Wine pouring animation for special occasions */
+@keyframes fillWine {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.wine-fill {
+    position: relative;
+    overflow: hidden;
+}
+
+.wine-fill::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(125, 29, 63, 0.7);
+    animation: fillWine 2s ease-in-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chef-image-container {
+        width: 10rem;
+        height: 10rem;
+    }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Ondine | Wine List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-serif bg-stone-50 text-stone-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full text-white z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-light tracking-wider">
+                <span class="text-wine">BAR</span> ONDINE
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm tracking-wide">
+                <a href="index.html#about" class="hover:text-wine transition">ABOUT</a>
+                <a href="wine-list.html" class="hover:text-wine transition">WINE LIST</a>
+                <a href="menu.html" class="hover:text-wine transition">MENU</a>
+                <a href="index.html#contact" class="hover:text-wine transition">CONTACT</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-stone-900 pb-4">
+            <div class="container mx-auto px-6 flex flex-col space-y-4">
+                <a href="index.html#about" class="py-2 hover:text-wine transition">ABOUT</a>
+                <a href="wine-list.html" class="py-2 hover:text-wine transition">WINE LIST</a>
+                <a href="menu.html" class="py-2 hover:text-wine transition">MENU</a>
+                <a href="index.html#contact" class="py-2 hover:text-wine transition">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-16 bg-wine text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-light mb-4 tracking-wider">WINE LIST</h1>
+            <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
+            <p class="max-w-2xl mx-auto text-white">Our carefully curated selection featuring over 300 bottles from around the world</p>
+        </div>
+    </header>
+
+    <!-- Wine List Section -->
+    <section class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <!-- Sparkling Wines -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-light mb-6 text-wine text-center">Sparkling & Champagne</h2>
+                <div class="w-20 h-1 bg-wine mx-auto mb-10"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 max-w-4xl mx-auto">
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Dom Pérignon, Brut</h4>
+                            <span class="text-gold">$320</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Champagne, France | 2012</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Veuve Clicquot, Yellow Label Brut</h4>
+                            <span class="text-gold">$140</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Champagne, France | NV</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Ruinart, Blanc de Blancs</h4>
+                            <span class="text-gold">$170</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Champagne, France | NV</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Schramsberg, Blanc de Blancs</h4>
+                            <span class="text-gold">$85</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">North Coast, California | 2018</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- White Wines -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-light mb-6 text-wine text-center">White Wines</h2>
+                <div class="w-20 h-1 bg-wine mx-auto mb-10"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 max-w-4xl mx-auto">
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Domaine Leflaive, Puligny-Montrachet</h4>
+                            <span class="text-gold">$240</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Burgundy, France | 2019</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Kistler, Vine Hill Vineyard Chardonnay</h4>
+                            <span class="text-gold">$165</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Russian River Valley, California | 2018</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">F.X. Pichler, Dürnsteiner Kellerberg Grüner Veltliner</h4>
+                            <span class="text-gold">$110</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Wachau, Austria | 2020</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Cloudy Bay, Sauvignon Blanc</h4>
+                            <span class="text-gold">$75</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Marlborough, New Zealand | 2021</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Jermann, Vintage Tunina</h4>
+                            <span class="text-gold">$90</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Friuli-Venezia Giulia, Italy | 2019</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Peter Michael, Ma Belle-Fille Chardonnay</h4>
+                            <span class="text-gold">$175</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Knights Valley, California | 2018</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red Wines -->
+            <div class="mb-20">
+                <h2 class="text-3xl font-light mb-6 text-wine text-center">Red Wines</h2>
+                <div class="w-20 h-1 bg-wine mx-auto mb-10"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 max-w-4xl mx-auto">
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Château Margaux, Premier Grand Cru Classé</h4>
+                            <span class="text-gold">$1,100</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Margaux, Bordeaux, France | 2015</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Domaine de la Romanée-Conti, La Tâche Grand Cru</h4>
+                            <span class="text-gold">$5,800</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Burgundy, France | 2018</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Sassicaia, Tenuta San Guido</h4>
+                            <span class="text-gold">$320</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Bolgheri, Tuscany, Italy | 2017</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Opus One</h4>
+                            <span class="text-gold">$425</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Napa Valley, California | 2018</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Penfolds, Grange</h4>
+                            <span class="text-gold">$750</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">South Australia | 2016</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Vega Sicilia, Único</h4>
+                            <span class="text-gold">$680</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Ribera del Duero, Spain | 2011</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dessert Wines -->
+            <div>
+                <h2 class="text-3xl font-light mb-6 text-wine text-center">Dessert Wines</h2>
+                <div class="w-20 h-1 bg-wine mx-auto mb-10"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 max-w-4xl mx-auto">
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Château d'Yquem, Premier Cru Supérieur</h4>
+                            <span class="text-gold">$680</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Sauternes, Bordeaux, France | 2015 (375ml)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Royal Tokaji, Essencia</h4>
+                            <span class="text-gold">$950</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Tokaj, Hungary | 2008 (375ml)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Inniskillin, Gold Vidal Icewine</h4>
+                            <span class="text-gold">$120</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Niagara Peninsula, Canada | 2019 (375ml)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="flex justify-between">
+                            <h4 class="text-lg">Graham's, 40 Year Old Tawny Port</h4>
+                            <span class="text-gold">$290</span>
+                        </div>
+                        <p class="text-stone-600 text-sm">Douro Valley, Portugal | NV</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-stone-50 text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-sm text-black font-medium">© 2023 Bar Ondine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

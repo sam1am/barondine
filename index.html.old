@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Ondine | Fine Wine & Cuisine</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-serif bg-stone-50 text-stone-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full text-white z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-light tracking-wider">
+                <span class="text-wine">BAR</span> ONDINE
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm tracking-wide">
+                <a href="#about" class="hover:text-wine transition">ABOUT</a>
+                <a href="#contact" class="hover:text-wine transition">CONTACT</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-stone-900 pb-4">
+            <div class="container mx-auto px-6 flex flex-col space-y-4">
+                <a href="#about" class="py-2 hover:text-wine transition">ABOUT</a>
+                <a href="#contact" class="py-2 hover:text-wine transition">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="h-screen flex items-center justify-center bg-cover bg-center relative"
+        style="background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-light text-white mb-4 tracking-wider">BAR ONDINE</h1>
+            <p class="text-xl text-gold font-light italic tracking-wide mb-4">Salt Lake City's Premier Wine Experience
+            </p>
+            <p class="text-4xl text-white font-light tracking-wider mb-8">COMING SOON</p>
+            <a href="#about" class="btn-primary">Discover More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1423483641154-5411ec9c0ddf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80"
+                        alt="Fine Wine Selection" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-light mb-6 tracking-wide">The Ondine Experience</h2>
+                    <div class="w-20 h-1 bg-wine mb-6"></div>
+                    <p class="mb-6 text-stone-700 leading-relaxed">
+                        Nestled in the heart of downtown Salt Lake City on Pierpoint Avenue, Bar Ondine offers an
+                        unparalleled wine and cocktail experience complemented by exquisite cuisine crafted by world-renowned chefs.
+                    </p>
+                    <p class="mb-6 text-stone-700 leading-relaxed">
+                        Our carefully curated wine list – the most extensive in Utah – features rare vintages and hidden
+                        gems from prestigious vineyards around the world, selected by our master sommeliers to delight
+                        both connoisseurs and casual enthusiasts alike.
+                    </p>
+                    <p class="mb-6 text-stone-700 leading-relaxed">
+                        Complementing our wine program, our bar team crafts artisanal cocktails using premium spirits, 
+                        house-made infusions, and fresh ingredients – creating the perfect balance of classic techniques and innovative flavors.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed">
+                        The elegant ambiance, attentive service, and exceptional offerings create a sophisticated yet
+                        welcoming atmosphere that captivates all who enter our doors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wine Section -->
+    <section class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-light mb-6 tracking-wide text-stone-800">Our Wine Selection</h2>
+            <div class="w-20 h-1 bg-wine mx-auto mb-10"></div>
+            <p class="max-w-2xl mx-auto mb-12 text-stone-800 leading-relaxed">
+                Bar Ondine proudly presents Utah's most extensive wine collection, featuring over 300 carefully selected
+                bottles from around the world.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 border border-stone-200">
+                    <div class="wine-icon mb-6">
+                        <i class="fas fa-wine-glass-alt text-4xl text-wine"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-4 text-stone-800">Old World Classics</h3>
+                    <p class="text-stone-800">Exquisite selections from France, Italy, and Spain's most prestigious
+                        vineyards, representing centuries of winemaking tradition.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 border border-stone-200">
+                    <div class="wine-icon mb-6">
+                        <i class="fas fa-globe-americas text-4xl text-wine"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-4 text-stone-800">New World Discoveries</h3>
+                    <p class="text-stone-800">Bold, innovative wines from California, Australia, New Zealand, and South
+                        America's most exciting winemakers.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 border border-stone-200">
+                    <div class="wine-icon mb-6">
+                        <i class="fas fa-star text-4xl text-wine"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-4 text-stone-800">Rare & Limited</h3>
+                    <p class="text-stone-800">A rotating collection of rare vintages, limited production bottles, and
+                        collector's items available exclusively at Bar Ondine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-5xl font-light mb-8 tracking-wide text-wine">Coming Soon!</h2>
+                <div class="w-20 h-1 bg-wine mx-auto mb-10"></div>
+                <p class="text-xl text-stone-600 mb-10">We're putting the finishing touches on our curated wine selection, hand-crafted cocktail program, and seasonal menu. Stay tuned for Salt Lake City's premier wine and cocktail experience.</p>
+                <div class="bg-white p-10 shadow-lg rounded-lg">
+                    <div class="flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-glass-cheers text-6xl text-gold mb-6"></i>
+                            <h3 class="text-2xl font-light mb-4">Join Our Grand Opening</h3>
+                            <p class="text-stone-600 mb-6">Be the first to experience Bar Ondine's exceptional wine selection, hand-crafted cocktails, and culinary offerings.</p>
+                            <a href="#" class="inline-block px-8 py-3 bg-wine text-white rounded-sm hover:bg-opacity-90 transition">Get Notified</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Simple Contact Section -->
+    <section id="contact" class="py-20 bg-stone-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+                <h2 class="text-3xl font-light mb-6 tracking-wide">Contact Us</h2>
+                <div class="w-20 h-1 bg-wine mx-auto mb-10"></div>
+                <p class="text-white mb-10">For updates on our grand opening, follow us on social media:</p>
+                <div class="flex space-x-8 justify-center">
+                    <a href="#" class="text-white hover:text-gold transition">
+                        <i class="fab fa-instagram text-4xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gold transition">
+                        <i class="fab fa-facebook-f text-4xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gold transition">
+                        <i class="fab fa-twitter text-4xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-stone-50 text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-sm text-black font-medium">© 2025 Bar Ondine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
